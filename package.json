@@ -1,0 +1,20 @@
+{
+  "name": "@hitbit/stubs",
+  "description": "Stubs for HitBit app",
+  "version": "0.0.2",
+  "author": "Emiliano Bovetti",
+  "license": "GPL-3.0",
+  "homepage": "https://github.com/hitbit-app/stubs#readme",
+  "bin": {
+    "hitbit-stub": "./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hitbit-app/stubs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hitbit-app/stubs/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
