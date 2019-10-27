@@ -38,3 +38,6 @@ if (componentNames.length === 0) {
 }
 
 componentNames.forEach(name => mkcomponent({ baseDir, name, type }));
+
+const { exec } = require('child_process');
+exec('say Well done pal');
