@@ -9,4 +9,4 @@ module.exports = function mkdirp(path, ...args) {
   }
 
   return mkdirSync(path, ...args);
-}
+};
