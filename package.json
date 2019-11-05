@@ -1,7 +1,7 @@
 {
   "name": "@hitbit/stubs",
   "description": "Stubs for HitBit app",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "author": "Emiliano Bovetti",
   "license": "GPL-3.0",
   "homepage": "https://github.com/hitbit-app/stubs#readme",

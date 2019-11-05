@@ -22,8 +22,14 @@ export function ${componentName}(props) {
 module.exports = function mkcomponent({ baseDir, name, type }) {
   const destDir = path.join(baseDir, name);
 
+  // Note that 'index' is excluded too
+  if (name[0].toLowerCase() === name[0]) {
+    const capitalized = name[0].toUpperCase() + name.slice(1);
+    return console.error(`Invalid component name, use ${capitalized} instead`);
+  }
+
   if (existsSync(destDir)) {
-    return console.error(`The "${name}" ${type} already exists`);
+    return console.error(`"${name}" ${type} already exists`);
   }
 
   mkdirp(destDir);
@@ -31,5 +37,5 @@ module.exports = function mkcomponent({ baseDir, name, type }) {
   writeFileSync(path.join(destDir, 'index.js'), indexTemplate(name));
   writeFileSync(path.join(destDir, `${name}.js`), componentTemplate(name));
 
-  console.log(`The "${name}" ${type} was created successfully`);
+  console.log(`"${name}" ${type} was created successfully`);
 };
